@@ -15,7 +15,7 @@
     "duration": 6,
     "expiry": "2025-04-22T12:25:58.498Z",
     "savedtime": "2025-04-17T12:25:58.498Z",
-    "difficulty": "Intermediate"
+    "level": "Intermediate"
   },
   {
     "id": "15350",
@@ -33,7 +33,7 @@
     "duration": 4,
     "expiry": "2025-04-22T06:26:02.057Z",
     "savedtime": "2025-04-17T06:26:02.057Z",
-    "difficulty": "Beginner"
+    "level": "Beginner"
   },
   {
     "id": "15351",
@@ -51,7 +51,7 @@
     "duration": 8,
     "expiry": "2025-04-22T06:26:02.057Z",
     "savedtime": "2025-04-17T06:26:02.057Z",
-    "difficulty": "Advanced"
+    "level": "Advanced"
   },
   {
     "id": "15352",
@@ -69,7 +69,7 @@
     "duration": 7,
     "expiry": "2025-04-21T00:25:58.855Z",
     "savedtime": "2025-04-16T00:25:58.855Z",
-    "difficulty": "Intermediate"
+    "level": "Intermediate"
   },
   {
     "id": "15353",
@@ -87,7 +87,7 @@
     "duration": 5,
     "expiry": "2025-04-21T18:26:00.578Z",
     "savedtime": "2025-04-16T18:26:00.578Z",
-    "difficulty": "Advanced"
+    "level": "Advanced"
   },
   {
     "id": "15354",
@@ -105,7 +105,7 @@
     "duration": 6,
     "expiry": "2025-04-21T12:26:05.741Z",
     "savedtime": "2025-04-16T12:26:05.741Z",
-    "difficulty": "Intermediate"
+    "level": "Intermediate"
   },
   {
     "id": "15355",
@@ -123,7 +123,7 @@
     "duration": 3,
     "expiry": "2025-04-21T06:26:08.048Z",
     "savedtime": "2025-04-16T06:26:08.048Z",
-    "difficulty": "Beginner"
+    "level": "Beginner"
   },
   {
     "id": "15356",
@@ -141,7 +141,7 @@
     "duration": 9,
     "expiry": "2025-04-21T06:26:08.048Z",
     "savedtime": "2025-04-16T06:26:08.048Z",
-    "difficulty": "Advanced"
+    "level": "Advanced"
   },
   {
     "id": "15357",
@@ -159,7 +159,7 @@
     "duration": 5,
     "expiry": "2025-04-21T06:26:08.048Z",
     "savedtime": "2025-04-16T06:26:08.048Z",
-    "difficulty": "Intermediate"
+    "level": "Intermediate"
   },
   {
     "id": "15358",
@@ -177,6 +177,98 @@
     "duration": 3,
     "expiry": "2025-04-21T00:25:59.758Z",
     "savedtime": "2025-04-16T00:25:59.758Z",
-    "difficulty": "Beginner"
+    "level": "Beginner"
+  },
+  {
+    "id": "15359",
+    "sku": "71725",
+    "pic": "https://secureimages.teach12.com/tgc/images/m2/wondrium/pages/home/test/Mathematics.jpg",
+    "title": "Introduction to Artificial Intelligence",
+    "coupon": "https://www.udemy.com/course/intro-to-ai/?couponCode=AI2024",
+    "org_price": "$99.99",
+    "desc_text": "Explore the fundamentals of artificial intelligence, including machine learning, neural networks, and robotics. This course provides hands-on projects and real-world applications to help students understand AI's impact across industries.",
+    "short_desc": "Learn AI basics and its applications in various industries.",
+    "category": "Tech",
+    "language": "English",
+    "platform": "Udemy",
+    "rating": 4,
+    "duration": 6,
+    "expiry": "2025-04-22T12:25:58.498Z",
+    "savedtime": "2025-04-17T12:25:58.498Z",
+    "level": "Intermediate"
+  },
+  {
+    "id": "15360",
+    "sku": "71726",
+    "pic": "https://secureimages.teach12.com/tgc/images/m2/wondrium/pages/home/test/Mathematics.jpg",
+    "title": "Project Management Professional (PMP) Exam Prep",
+    "coupon": "https://www.udemy.com/course/pmp-exam-prep/?couponCode=PMP2024",
+    "org_price": "$129.99",
+    "desc_text": "Prepare for the PMP certification exam with this comprehensive course. Covers project management frameworks, methodologies, and best practices. Includes mock exams and study guides.",
+    "short_desc": "Ace the PMP exam with expert guidance and practice tests.",
+    "category": "Business",
+    "language": "English",
+    "platform": "Udemy",
+    "rating": 5,
+    "duration": 8,
+    "expiry": "2025-04-22T06:26:02.057Z",
+    "savedtime": "2025-04-17T06:26:02.057Z",
+    "level": "Advanced"
+  },
+  {
+    "id": "15361",
+    "sku": "71727",
+    "pic": "https://secureimages.teach12.com/tgc/images/m2/wondrium/pages/home/test/Mathematics.jpg",
+    "title": "Python for Data Science and Analysis",
+    "coupon": "https://www.udemy.com/course/python-data-science/?couponCode=PYTHON2024",
+    "org_price": "$89.99",
+    "desc_text": "Learn Python programming for data analysis and visualization. Covers libraries like Pandas, NumPy, and Matplotlib. Includes hands-on projects to analyze real-world datasets.",
+    "short_desc": "Master Python for data analysis and visualization.",
+    "category": "Tech",
+    "language": "English",
+    "platform": "Udemy",
+    "rating": 4,
+    "duration": 7,
+    "expiry": "2025-04-21T00:25:58.855Z",
+    "savedtime": "2025-04-16T00:25:58.855Z",
+    "level": "Intermediate"
+  },
+  {
+    "id": "15362",
+    "sku": "71728",
+    "pic": "https://secureimages.teach12.com/tgc/images/m2/wondrium/pages/home/test/Mathematics.jpg",
+    "title": "Public Speaking Mastery",
+    "coupon": "https://www.udemy.com/course/public-speaking-mastery/?couponCode=SPEAK2024",
+    "org_price": "$74.99",
+    "desc_text": "Develop confidence and skills for effective public speaking. Learn techniques for speech preparation, delivery, and audience engagement. Includes practical exercises and feedback.",
+    "short_desc": "Enhance your public speaking skills with proven techniques.",
+    "category": "Business",
+    "language": "English",
+    "platform": "Udemy",
+    "rating": 3,
+    "duration": 4,
+    "expiry": "2025-04-21T18:26:00.578Z",
+    "savedtime": "2025-04-16T18:26:00.578Z",
+    "level": "Beginner"
+  },
+  {
+    "id": "15363",
+    "sku": "71729",
+    "pic": "https://secureimages.teach12.com/tgc/images/m2/wondrium/pages/home/test/Mathematics.jpg",
+    "title": "Ethical Leadership in Business",
+    "coupon": "https://www.udemy.com/course/ethical-leadership/?couponCode=LEAD2024",
+    "org_price": "$79.99",
+    "desc_text": "Learn the principles of ethical leadership and decision-making in business. Explore case studies and frameworks to navigate ethical dilemmas and build trust within organizations.",
+    "short_desc": "Lead with integrity and make ethical decisions in business.",
+    "category": "Business",
+    "language": "English",
+    "platform": "Udemy",
+    "rating": 4,
+    "duration": 5,
+    "expiry": "2025-04-21T12:26:05.741Z",
+    "savedtime": "2025-04-16T12:26:05.741Z",
+    "level": "Intermediate"
   }
 ]
+
+

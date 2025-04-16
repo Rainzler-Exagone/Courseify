@@ -1,5 +1,5 @@
 import { Badge } from "@/components/ui/badge";
-import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from "@/components/ui/card"
+import { Card, CardContent,  CardHeader } from "@/components/ui/card"
 import { notFound } from "next/navigation";
 import  Courses from '@/data/courses.json'
 import { BarChart2, Calendar, Clock, Globe, School, Star } from "lucide-react";
@@ -8,7 +8,7 @@ import Image from "next/image";
 
 
 
-async function getCourse(params: string) {
+async function getCourse(params: { slug: string }) {
     return Courses.find((course: { id: string }) => course.id === params.slug);
 }
 
@@ -77,7 +77,7 @@ export default async function CoursePage({ params }: { params: { slug: string } 
                 </div>
                 <div className="flex items-center gap-2">
                   <BarChart2 className="h-4 w-4 text-purple-500" />
-                  <span className="text-sm">{course.difficulty}</span>
+                  <span className="text-sm">{course.level}</span>
                 </div>
                 <div className="flex items-center gap-2">
                   <Globe className="h-4 w-4 text-green-500" />

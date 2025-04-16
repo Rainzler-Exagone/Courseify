@@ -2,7 +2,6 @@
 import { Button } from "@/components/ui/button";
 import { FileQuestion } from "lucide-react";
 import { redirect } from "next/navigation";
-import { use } from "react";
 
 
 export default function NotFound() {
@@ -15,7 +14,7 @@ export default function NotFound() {
           <h1 className="mt-6 text-6xl font-bold text-gray-900">404</h1>
           <p className="mt-4 text-xl text-gray-600">Page not found</p>
           <p className="mt-2 text-gray-500">
-            Sorry, we couldn't find the page you're looking for.
+            Sorry, we couldn`t find the page you`re looking for.
           </p>
         </div>
         <div className="space-y-4">

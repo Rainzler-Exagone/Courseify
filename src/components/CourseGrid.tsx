@@ -1,9 +1,10 @@
 "use client"
 import React, { useState } from 'react';
-import {  Search, SlidersHorizontal } from 'lucide-react';
+import {  Search } from 'lucide-react';
 import CourseCard from './CourseCard';
 import Link from 'next/link';
 import { Slider } from './ui/slider';
+import { Course } from '@/types/course';
 
 interface Filters {
   search: string;
@@ -14,7 +15,7 @@ interface Filters {
 
 
 
-function CoursesGrid({initialData}) {
+function CoursesGrid({initialData}:{initialData:Course[]}) {
   const [filters, setFilters] = useState<Filters>({
     search: '',
     level: '',
@@ -32,14 +33,14 @@ function CoursesGrid({initialData}) {
 
  
    // Client-side filtering function
-   const filteredData = initialData.filter(item => {
+   const filteredData: Course[] = initialData.filter((item: Course) => {
     // Search filter
     if (filters.search && !item.title.toLowerCase().includes(filters.search.toLowerCase())) {
       return false;
     }
     
     // Level filter
-    if (filters.level && item.difficulty.toLowerCase() !== filters.level.toLowerCase()) {
+    if (filters.level && item.level.toLowerCase() !== filters.level.toLowerCase()) {
       return false;
     }
     
@@ -78,6 +79,7 @@ function CoursesGrid({initialData}) {
             <div className="flex-1">
               <label className="block text-sm font-medium text-gray-700 mb-1">Level</label>
               <select
+              title='select-co'
                 className="w-full border border-gray-200 rounded-lg p-2 focus:outline-none focus:ring-2 focus:ring-blue-500"
                 value={filters.level}
                 onChange={(e) => handleFilterChange('level', e.target.value)}
@@ -95,6 +97,7 @@ function CoursesGrid({initialData}) {
             <div className="flex-1">
               <label className="block text-sm font-medium text-gray-700 mb-1">Category</label>
               <select
+              title='select-co'
                 className="w-full border border-gray-200 rounded-lg p-2 focus:outline-none focus:ring-2 focus:ring-blue-500"
                 value={filters.category}
                 onChange={(e) => handleFilterChange('category', e.target.value)}
@@ -111,7 +114,7 @@ function CoursesGrid({initialData}) {
             {/* Duration Slider */}
             <div className="flex-1">
               <label className="block text-sm font-medium text-gray-700 mb-1">
-                Duration: {filters.duration}h
+                Duration: {filters.duration} hours
               </label>
               {/* <input
                 type="range"
@@ -168,7 +171,7 @@ function CoursesGrid({initialData}) {
 
          <div className='grid grid-cols-1 gap-4 md:grid-cols-3'>
          {
-          filteredData.map((course)=>(
+          filteredData.map((course: Course)=>(
          <Link key={course.id} href={`courses/${course.id}`}><CourseCard  course={course}/></Link>
           ))
         }
