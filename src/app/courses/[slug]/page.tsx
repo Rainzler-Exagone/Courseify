@@ -5,11 +5,13 @@ import  Courses from '@/data/courses.json'
 import { BarChart2, Calendar, Clock, Globe, School, Star } from "lucide-react";
 import { Separator } from "@radix-ui/react-separator";
 import Image from "next/image";
+import { Course } from "@/types/course";
 
 
 
-async function getCourse(params: { slug: string }) {
-    return Courses.find((course: { id: string }) => course.id === params.slug);
+
+ function getCourse(slug: string): Course | undefined   {
+    return Courses.find((course: { id: string }) => course.id ===  slug) as Course | undefined;
 }
 
 const formatDate = (dateString: string) => {
@@ -21,8 +23,9 @@ const formatDate = (dateString: string) => {
     });
   };
 
-export default async function CoursePage({ params }: { params: { slug: string } }) {
-    const course = await getCourse(params);
+export default  async function CoursePage({ params }: { params:Promise<{ slug: string }>}) {
+  const {slug}  = await params
+    const course =  getCourse(slug);
  
       
     if (!course) return notFound();
